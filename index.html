@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zowi Order & Login</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Zowi Order Submission</h2>
+
+    <input type="text" id="name" placeholder="ስም / Name *"><br>
+    <input type="text" id="phone" placeholder="ስልክ / Phone *"><br>
+    <input type="text" id="city" placeholder="ከተማ / City *"><br>
+    <input type="text" id="address" placeholder="አድራሻ / Address *"><br>
+
+    <select id="paymentChannel">
+      <option value="">Select Payment Channel *</option>
+      <option value="Telebirr(0979347496)">Telebirr (0979347496)</option>
+      <option value="M-PESA(0710341139)">M-PESA (0710341139)</option>
+      <option value="CBE(1000111363297)">CBE (1000111363297)</option>
+    </select><br>
+
+    <input type="file" id="paymentProof" accept="image/*"><br>
+
+    <div class="actions">
+      <button id="submitOrderBtn">Submit Order</button>
+      <button id="loginBtn" class="secondary">Login</button>
+    </div>
+
+    <p id="status">Data & file will be saved to Firebase.</p>
+    <p class="note">Admin? <a href="./admin.html">Go to Admin Panel</a></p>
+  </div>
+
+  <script type="module" src="./auth.js"></script>
+</body>
+</html>

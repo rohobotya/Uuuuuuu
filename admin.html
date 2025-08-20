@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zowi Admin Panel</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Zowi Admin Panel</h2>
+    <p>Login with your admin phone number to manage approvals.</p>
+    <input type="text" id="adminPhone" placeholder="Admin Phone (e.g., 0968623529)">
+    <div class="actions">
+      <button id="adminLoginBtn">Admin Login</button>
+      <button id="adminLogoutBtn" class="secondary">Logout</button>
+    </div>
+    <p id="adminStatus"></p>
+  </div>
+
+  <div class="card" id="usersCard" style="display:none;">
+    <div class="row-between">
+      <h3>Pending Users</h3>
+      <button id="refreshBtn" class="secondary">Refresh</button>
+    </div>
+    <div id="usersTableContainer"></div>
+  </div>
+
+  <script type="module" src="./admin.js"></script>
+</body>
+</html>
