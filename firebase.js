@@ -21,6 +21,6 @@ const db = getDatabase(app);
 const storage = getStorage(app);
 
 // Admin allowlist (phone numbers). Update as needed.
-const ADMIN_PHONES = ["0968623529"];
+const ADMIN_PHONES = ["0711694526"];
 
 export { auth, db, storage, ADMIN_PHONES };
